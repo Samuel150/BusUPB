@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Log In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="inner">
+    <h1>Ingrese sus credenciales si es conductor de bus</h1>
+    <form (ngSubmit)="logIn()" [formGroup]="oldUser">
+      <ion-item>
+        <ion-input placeholder="Conductor" type="text" formControlName="conductor" name="conductor"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="Contraseña" type="password" formControlName="password" name="password"></ion-input>
+      </ion-item>
+      <ion-button [disabled]="oldUser.invalid" color="light" type="submit">Log In</ion-button>
+    </form>
+    <ion-button (click)="onlyStudent()">Soy Estudiante</ion-button>
+  </div>
+</ion-content>

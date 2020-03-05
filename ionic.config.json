@@ -1,5 +1,7 @@
 {
   "name": "geolocationBus",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
